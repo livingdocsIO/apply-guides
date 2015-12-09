@@ -1,0 +1,28 @@
+{
+  "name": "livingdocs-guides",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Livingdocs guidelines for coding and working together",
+  "scripts": {
+    "install": "node install.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/upfrontIO/guides.git"
+  },
+  "keywords": [
+    "linting",
+    "best practices",
+    "guidelines",
+    "styleguides"
+  ],
+  "author": "upfrontIO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/upfrontIO/guides/issues"
+  },
+  "homepage": "https://github.com/upfrontIO/guides",
+  "dependencies": {
+    "git-validate": "^2.1.0"
+  }
+}
