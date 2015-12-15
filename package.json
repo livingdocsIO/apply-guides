@@ -1,10 +1,11 @@
 {
   "name": "livingdocs-apply-guides",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Livingdocs guidelines for coding and working together",
   "scripts": {
-    "install": "node install.js"
+    "install": "node install.js",
+    "test": "node install.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,6 @@
   },
   "homepage": "https://github.com/upfrontIO/guides",
   "dependencies": {
-    "git-validate": "^2.1.0"
+    "fs-sync": "^1.0.1"
   }
 }
