@@ -9,7 +9,7 @@ if(fs.exists(path.resolve('package.json'))){
     from = path.resolve(__dirname, file);
     to = path.resolve(file);
     result = fs.copy(from, to);
-    if(typeof result != 'undefined'){
+    if(typeof(result) != 'undefined'){
       console.log('livingdocs-apply-guides: Copied '+file);
     } else {
       console.log('livingdocs-apply-guides: Failed copying '+file);
