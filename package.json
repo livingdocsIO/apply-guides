@@ -1,7 +1,7 @@
 {
   "name": "livingdocs-apply-guides",
   "private": true,
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Livingdocs guidelines for coding and working together",
   "scripts": {
     "install": "node install.js",

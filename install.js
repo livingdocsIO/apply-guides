@@ -2,14 +2,16 @@
 
 path = require('path');
 fs = require('fs-sync');
+rootPath = path.resolve('../..')
 
-if(fs.exists(path.resolve('package.json'))){
+if(fs.exists(path.join(rootPath, 'package.json'))){
   files = ['coffeelint.json', '.coffeelintignore', '.codeclimate.yml', '.editorconfig'];
   files.forEach(function(file){
-    from = path.resolve(__dirname, file);
-    to = path.resolve(file);
-    result = fs.copy(from, to);
-    if(typeof(result) != 'undefined'){
+    from = path.join(__dirname, file);
+    to = path.join(rootPath, file);
+    result = fs.copy(from, to, {force: true});
+
+    if(result){
       console.log('livingdocs-apply-guides: Copied '+file);
     } else {
       console.log('livingdocs-apply-guides: Failed copying '+file);
