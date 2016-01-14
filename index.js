@@ -13,8 +13,8 @@ var repos = require('./repos.json')
 
 var filenames = ['coffeelint.json', '.coffeelintignore', '.codeclimate.yml', '.editorconfig', 'package.json']
 
-var build = process.env.TRAVIS_BUILD_NUMBER !== 'undefined'
-  ? process.env.TRAVIS_BUILD_NUMBER || ''
+var build = process.env.TRAVIS_BUILD_ID !== 'undefined'
+  ? process.env.TRAVIS_BUILD_ID || ''
   : ''
 
 var options = {
