@@ -1,15 +1,14 @@
 {
   "name": "livingdocs-apply-guides",
   "private": true,
-  "version": "1.2.0",
   "description": "Livingdocs guidelines for coding and working together",
   "scripts": {
-    "install": "node install.js",
-    "test": "node install.js"
+    "test": "standard",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/upfrontIO/guides.git"
+    "url": "git+https://github.com/upfrontIO/apply-guides.git"
   },
   "keywords": [
     "linting",
@@ -20,10 +19,13 @@
   "author": "upfrontIO",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/upfrontIO/guides/issues"
+    "url": "https://github.com/upfrontIO/apply-guides/issues"
   },
-  "homepage": "https://github.com/upfrontIO/guides",
+  "homepage": "https://github.com/upfrontIO/apply-guides",
   "dependencies": {
-    "fs-sync": "^1.0.1"
+    "@boennemann/github-change-remote-files": "^1.1.1"
+  },
+  "devDependencies": {
+    "standard": "^5.4.1"
   }
 }
