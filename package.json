@@ -1,6 +1,7 @@
 {
   "name": "livingdocs-apply-guides",
   "private": true,
+  "version": "0.0.0-development",
   "description": "Livingdocs guidelines for coding and working together",
   "scripts": {
     "test": "standard",
@@ -23,7 +24,7 @@
   },
   "homepage": "https://github.com/upfrontIO/apply-guides",
   "dependencies": {
-    "@boennemann/github-change-remote-files": "^1.1.1"
+    "@boennemann/github-change-remote-files": "^1.1.2"
   },
   "devDependencies": {
     "standard": "^5.4.1"
