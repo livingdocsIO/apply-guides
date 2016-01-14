@@ -19,6 +19,7 @@ var build = process.env.TRAVIS_BUILD_ID !== 'undefined'
 
 var options = {
   filenames,
+  newBranch: 'chore-apply-guides-' + Date.now(),
   transforms: [overwrite, overwrite, overwrite, overwrite, packageUpdate],
   token,
   message: `chore: update config files
