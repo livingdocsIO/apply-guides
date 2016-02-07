@@ -11,5 +11,8 @@
   }, {
     "user": "upfrontIO",
     "repo": "livingdocs-beta"
+  }, {
+    "user": "upfrontIO",
+    "repo": "livingdocs-server-boilerplate"
   }
 ]
