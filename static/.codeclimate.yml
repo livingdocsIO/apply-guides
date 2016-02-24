@@ -14,3 +14,4 @@ ratings:
 exclude_paths:
 - db/**/*
 - node_modules/**/*
+- vendor/**/*
