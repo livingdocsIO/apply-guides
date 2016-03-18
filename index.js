@@ -11,7 +11,7 @@ if (!token) throw new Error('Please provide a GH_TOKEN with write access in the 
 
 var repos = require('./repos.json')
 
-var filenames = ['coffeelint.json', '.coffeelintignore', '.codeclimate.yml', '.editorconfig', 'package.json']
+var filenames = ['coffeelint.json', '.coffeelintignore', '.editorconfig', 'package.json']
 
 var build = process.env.TRAVIS_BUILD_ID !== 'undefined'
   ? process.env.TRAVIS_BUILD_ID || ''
@@ -20,7 +20,7 @@ var build = process.env.TRAVIS_BUILD_ID !== 'undefined'
 var options = {
   filenames,
   newBranch: 'chore-apply-guides-' + Date.now(),
-  transforms: [overwrite, overwrite, overwrite, overwrite, packageUpdate],
+  transforms: [overwrite, overwrite, overwrite, packageUpdate],
   token,
   message: `chore: update config files
 
