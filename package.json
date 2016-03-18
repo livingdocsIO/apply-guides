@@ -24,7 +24,8 @@
   },
   "homepage": "https://github.com/upfrontIO/apply-guides",
   "dependencies": {
-    "@boennemann/github-change-remote-files": "^1.1.2"
+    "@boennemann/github-change-remote-files": "^1.1.2",
+    "lodash": "^4.6.1"
   },
   "devDependencies": {
     "standard": "^5.4.1"
