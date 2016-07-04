@@ -10,9 +10,18 @@
     "repo": "livingdocs-framework"
   }, {
     "user": "upfrontIO",
-    "repo": "livingdocs-beta"
+    "repo": "livingdocs-service-server"
+  }, {
+    "user": "upfrontIO",
+    "repo": "livingdocs-service-editor"
   }, {
     "user": "upfrontIO",
     "repo": "livingdocs-server-boilerplate"
+  }, {
+    "user": "upfrontIO",
+    "repo": "livingdocs-editor-boilerplate"
+  }, {
+    "user": "upfrontIO",
+    "repo": "livingdocs-docker"
   }
 ]
