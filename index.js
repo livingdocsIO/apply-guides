@@ -64,7 +64,7 @@ function packageUpdate (content) {
 
   pkg.engines = {
     node: '4',
-    npm: '^3.8.3'
+    npm: '^3.10.8'
   }
 
   return JSON.stringify(pkg, null, 2) + '\n'
