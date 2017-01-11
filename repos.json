@@ -19,8 +19,11 @@
     "repo": "livingdocs-bluewin-server"
   }, {
     "user": "upfrontIO",
-    "repo": "livingdocs-bluewin-editor"
+    "repo": "livingdocs-bluewin-delivery"
   }, {
+    "user": "upfrontIO",
+    "repo": "livingdocs-bluewin-editor"
+  },{
     "user": "upfrontIO",
     "repo": "livingdocs-server-boilerplate"
   }, {
