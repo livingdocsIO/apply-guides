@@ -1,33 +1,31 @@
 #!/usr/bin/env node
 
-var fs = require('fs')
-var path = require('path')
+const fs = require('fs')
+const path = require('path')
+const _ = require('lodash')
+const changeFiles = require('@boennemann/github-change-remote-files')
 
-var _ = require('lodash')
-
-var changeFiles = require('@boennemann/github-change-remote-files')
-
-var token = process.env.GH_TOKEN
+const token = process.env.GH_TOKEN
 
 if (!token) throw new Error('Please provide a GH_TOKEN with write access in the environment')
 
-var repos = require('./repos.json')
+const repos = require('./repos.json')
 
-var files = {
+const files = {
   '.eslintrc.json': overwrite,
   '.editorconfig': overwrite,
   'package.json': packageUpdate
 }
 
-var filenames = _.keys(files)
+const filenames = _.keys(files)
 
-var build = process.env.TRAVIS_BUILD_ID !== 'undefined'
+const build = process.env.TRAVIS_BUILD_ID !== 'undefined'
   ? process.env.TRAVIS_BUILD_ID || ''
   : ''
 
-var options = {
+const options = {
   filenames,
-  newBranch: 'chore-apply-guides-' + Date.now(),
+  newBranch: `chore-apply-guides-${Date.now()}`,
   transforms: _.values(files),
   token,
   message: `chore: update config files
@@ -37,7 +35,8 @@ ${filenames.join(', ')}`,
     title: 'Update config files to the latest version',
     body: `Latest config files from [apply-guides](https://github.com/upfrontIO/apply-guides).
 
-<sub>_Note: this PR is [automated](${'https://travis-ci.org/upfrontIO/apply-guides/builds/' + build}) and wasn\'t created by a human._</sub>`
+<sub>_Note: this PR is [automated](${`https://travis-ci.org/upfrontIO/apply-guides/builds/\
+${build}`}) and wasn't created by a human._</sub>`
   }
 }
 
@@ -53,8 +52,9 @@ function overwrite (content, filename) {
 }
 
 function packageUpdate (content) {
+  let pkg
   try {
-    var pkg = JSON.parse(content)
+    pkg = JSON.parse(content)
   } catch (e) {
     return null
   }
@@ -66,5 +66,5 @@ function packageUpdate (content) {
     npm: '^3.10.8'
   }
 
-  return JSON.stringify(pkg, null, 2) + '\n'
+  return `${JSON.stringify(pkg, null, 2)}\n`
 }
