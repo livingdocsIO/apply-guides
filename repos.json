@@ -32,5 +32,8 @@
   }, {
     "user": "upfrontIO",
     "repo": "livingdocs-docker"
+  }, {
+    "user": "upfrontIO",
+    "repo": "livingdocs-conf"
   }
 ]
