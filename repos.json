@@ -1,39 +1,39 @@
 [
   {
-    "user": "upfrontIO",
+    "user": "livingdocsIO",
     "repo": "livingdocs-server"
   }, {
-    "user": "upfrontIO",
+    "user": "livingdocsIO",
     "repo": "livingdocs-editor"
   }, {
-    "user": "upfrontIO",
+    "user": "livingdocsIO",
     "repo": "livingdocs-framework"
   }, {
-    "user": "upfrontIO",
+    "user": "livingdocsIO",
     "repo": "livingdocs-service-server"
   }, {
-    "user": "upfrontIO",
+    "user": "livingdocsIO",
     "repo": "livingdocs-service-editor"
   }, {
-    "user": "upfrontIO",
+    "user": "livingdocsIO",
     "repo": "livingdocs-bluewin-server"
   }, {
-    "user": "upfrontIO",
+    "user": "livingdocsIO",
     "repo": "livingdocs-bluewin-delivery"
   }, {
-    "user": "upfrontIO",
+    "user": "livingdocsIO",
     "repo": "livingdocs-bluewin-editor"
   },{
-    "user": "upfrontIO",
+    "user": "livingdocsIO",
     "repo": "livingdocs-server-boilerplate"
   }, {
-    "user": "upfrontIO",
+    "user": "livingdocsIO",
     "repo": "livingdocs-editor-boilerplate"
   }, {
-    "user": "upfrontIO",
+    "user": "livingdocsIO",
     "repo": "livingdocs-docker"
   }, {
-    "user": "upfrontIO",
+    "user": "livingdocsIO",
     "repo": "livingdocs-conf"
   }
 ]

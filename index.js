@@ -33,9 +33,9 @@ const options = {
 ${filenames.join(', ')}`,
   pr: {
     title: 'Update config files to the latest version',
-    body: `Latest config files from [apply-guides](https://github.com/upfrontIO/apply-guides).
+    body: `Latest config files from [apply-guides](https://github.com/livingdocsIO/apply-guides).
 
-<sub>_Note: this PR is [automated](${`https://travis-ci.org/upfrontIO/apply-guides/builds/\
+<sub>_Note: this PR is [automated](${`https://travis-ci.org/livingdocsIO/apply-guides/builds/\
 ${build}`}) and wasn't created by a human._</sub>`
   }
 }
