@@ -62,8 +62,8 @@ function packageUpdate (content) {
   if (pkg.devDependencies) delete pkg.devDependencies['livingdocs-apply-guides']
 
   pkg.engines = {
-    node: '>=8',
-    npm: '>=6.0.0'
+    node: '>=10.13.0',
+    npm: '>=6.13.4'
   }
 
   return `${JSON.stringify(pkg, null, 2)}\n`
