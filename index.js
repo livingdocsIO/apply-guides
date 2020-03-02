@@ -12,7 +12,6 @@ if (!token) throw new Error('Please provide a GH_TOKEN with write access in the 
 const repos = require('./repos.json')
 
 const files = {
-  '.eslintrc.json': overwrite,
   '.editorconfig': overwrite,
   'package.json': packageUpdate
 }
